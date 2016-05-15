@@ -2,7 +2,7 @@
 
 import * as T from "./types";
 
-export function m(a: number, b: number): T.BasicMath {
+export default function (a: number, b: number): T.BasicMath {
     return {
         a: a,
         b: b,

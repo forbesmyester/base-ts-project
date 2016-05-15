@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "find src test | grep '\\.ts$' | xargs -n 1 tslint && tsc && mocha --recursive --require source-map-support/register dest/test"
+    "test": "find src test | grep '\\.ts$' | xargs -n 1 tslint && tsc && mocha --recursive --require source-map-support/register dest/test && node require-test.js"
   },
   "repository": {
     "type": "git",
