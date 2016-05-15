@@ -1,0 +1,33 @@
+{
+  "name": "typescript-base-project",
+  "version": "0.9.0",
+  "description": "Base project for TypeScript",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "find src test | grep '\\.ts$' | xargs -n 1 tslint && tsc && mocha --recursive --require source-map-support/register dest/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:forbesmyester/typescript-base-project.git"
+  },
+  "author": "Matthew Forrester <github.com@speechmarks.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forbesmyester/typescript-base-project/issues"
+  },
+  "homepage": "https://github.com/forbesmyester/typescript-base-project",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "mocha": "^2.4.5",
+    "source-map-support": "^0.4.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  },
+  "dependencies": {
+    "tslint": "^3.10.2"
+  }
+}
