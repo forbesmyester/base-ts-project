@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "find src test | grep '\\.ts$' | xargs -n 1 tslint && tsc && mocha --recursive --require source-map-support/register dest/test && node require-test.js"
+    "test": "tsc && ava ./dest/test/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,14 +20,11 @@
   },
   "homepage": "https://github.com/forbesmyester/typescript-base-project",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^2.9.0",
-    "mocha": "^2.4.5",
-    "source-map-support": "^0.4.0",
+    "ava": "^0.15.2",
+    "source-map-support": "^0.4.2",
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
     "typings": "^0.8.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

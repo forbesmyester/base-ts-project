@@ -1,15 +1,25 @@
 import math from '../src/index';
 import * as Types from '../src/types';
-import {expect} from 'chai';
+import test from 'ava';
 
-describe('Can', function() {
+test('Can do math easy', function(t) {
+    // t.deepEqual(
+    //     math(1, 2),
+    //     {
+    //         a: 1,
+    //         b: 2,
+    //         equals: 3
+    //     }
+    // );
+});
 
-    it('can do math', function() {
-        expect(math(1, 2)).to.eql({
-            a: 1,
-            b: 2,
-            equals: 3
-        });
-    });
-
+test('Can do math difficult', function(t) {
+    t.deepEqual(
+        math(2, 3),
+        {
+            a: 2,
+            b: 3,
+            equals: 5
+        }
+    );
 });
