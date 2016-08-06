@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tsc && ava ./dest/test/index.js"
+    "test": "tslint src/**/*.ts test/**/*.ts && tsc && ava ./dest/test/index.js"
   },
   "repository": {
     "type": "git",
