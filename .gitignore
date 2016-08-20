@@ -1,6 +1,5 @@
-LocationHistory.json
 typings
 node_modules
 *.map
-*.d.ts
 */**/*.js
+*.dump

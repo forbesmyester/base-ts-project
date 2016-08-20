@@ -6,6 +6,7 @@
     "src": "src",
     "test": "test"
   },
+  "typings": "./dest/src/index.d.ts",
   "scripts": {
     "test": "tslint src/**/*.ts test/**/*.ts && tsc && ava ./dest/test/index.js"
   },
