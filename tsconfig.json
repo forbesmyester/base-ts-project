@@ -8,5 +8,9 @@
         "target": "es2015",
         "outDir": "dest"
     },
-    "files": [ "src/index.ts", "test/index.ts" ]
+    "files": [
+        "typings/main.d.ts",
+        "src/index.ts",
+        "test/index.ts"
+    ]
 }
