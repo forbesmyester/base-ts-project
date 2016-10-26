@@ -6,14 +6,22 @@
     "src": "src",
     "test": "test"
   },
+  "main": "./dist/src/index.js",
   "typings": "./dest/src/index.d.ts",
-  "main": "./dest/src/index.js",
   "scripts": {
-    "test": "tslint src/**/*.ts test/**/*.ts && tsc && ava ./dest/test/index.js"
+    "test": "tsc && tslint src/**/*.ts test/**/*.ts && ava ./dist/test/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:forbesmyester/typescript-base-project.git"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "@types/ramda": "0.0.2",
+    "ava": "^0.16.0",
+    "source-map-support": "^0.4.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
   },
   "author": "Matthew Forrester <github.com@speechmarks.com>",
   "license": "MIT",
@@ -21,12 +29,7 @@
     "url": "https://github.com/forbesmyester/typescript-base-project/issues"
   },
   "homepage": "https://github.com/forbesmyester/typescript-base-project",
-  "devDependencies": {
-    "ava": "^0.15.2",
-    "source-map-support": "^0.4.2",
-    "tslint": "^3.10.2",
-    "typescript": "^1.8.10",
-    "typings": "^0.8.1"
-  },
-  "dependencies": {}
+  "dependencies": {
+    "ramda": "^0.22.1"
+  }
 }

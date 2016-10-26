@@ -2,15 +2,18 @@
     "compilerOptions": {
         "module": "commonjs",
         "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "lib": ["es2015", "es2015.promise"],
         "removeComments": false,
         "inlineSourceMap": true,
         "declaration": true,
-        "target": "es2015",
-        "outDir": "dest"
+        "target": "es6",
+        "outDir": "dist"
     },
-    "files": [
-        "typings/main.d.ts",
-        "src/index.ts",
-        "test/index.ts"
+    "include": [
+        "typings/index.d.ts",
+        "src/**/*.ts",
+        "test/**/*.ts"
     ]
 }
