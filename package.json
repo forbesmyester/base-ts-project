@@ -7,7 +7,7 @@
     "test": "test"
   },
   "main": "./dist/src/index.js",
-  "typings": "./dest/src/index.d.ts",
+  "typings": "./dist/src/index.d.ts",
   "scripts": {
     "test": "tsc && tslint src/**/*.ts test/**/*.ts && ava ./dist/test/*.js"
   },
