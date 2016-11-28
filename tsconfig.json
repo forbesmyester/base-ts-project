@@ -4,15 +4,16 @@
         "preserveConstEnums": true,
         "strictNullChecks": true,
         "noImplicitThis": true,
-        "lib": ["es2015", "es2015.promise"],
+        "lib": ["dom", "es2015", "es2015.promise"],
         "removeComments": false,
         "inlineSourceMap": true,
         "declaration": true,
         "target": "es6",
-        "outDir": "dist"
+        "outDir": "dist",
+        "alwaysStrict": true,
+        "strictNullChecks": true
     },
     "include": [
-        "typings/index.d.ts",
         "src/**/*.ts",
         "test/**/*.ts"
     ]

@@ -21,7 +21,7 @@
     "ava": "^0.16.0",
     "source-map-support": "^0.4.2",
     "tslint": "^3.15.1",
-    "typescript": "^2.0.3"
+    "typescript": "^2.1.1"
   },
   "author": "Matthew Forrester <github.com@speechmarks.com>",
   "license": "MIT",
@@ -29,7 +29,5 @@
     "url": "https://github.com/forbesmyester/typescript-base-project/issues"
   },
   "homepage": "https://github.com/forbesmyester/typescript-base-project",
-  "dependencies": {
-    "ramda": "^0.22.1"
-  }
+  "dependencies": { }
 }
